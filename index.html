@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infravision Equipment Usage</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Infravision</h2>
+<h3>Equipment Usage & Fuel Management</h3>
+
+<form id="equipmentForm">
+
+<label>Employee ID</label>
+<input type="text" id="employeeId" required>
+
+<label>User Name</label>
+<input type="text" id="userName" readonly>
+
+<label>Mobile Number</label>
+<input type="text" id="mobile" readonly>
+
+<label>Location</label>
+<input type="text" id="location" readonly>
+
+<label>Equipment Number</label>
+<input type="text" id="equipmentNumber" readonly>
+
+<label>Date of Use</label>
+<input type="date" id="dateOfUse" required>
+
+<label>In Time</label>
+<input type="time" id="inTime" required>
+
+<label>Out Time</label>
+<input type="time" id="outTime" required>
+
+<label>In Meter Reading</label>
+<input type="number" id="inMeter" required>
+
+<label>Out Meter Reading</label>
+<input type="number" id="outMeter" required>
+
+<label>Fuel (Litres)</label>
+<input type="number" id="fuel">
+
+<label>Lubes</label>
+<input type="text" id="lubes">
+
+<label>Remarks</label>
+<textarea id="remarks"></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
