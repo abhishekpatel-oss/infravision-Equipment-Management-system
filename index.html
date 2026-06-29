@@ -1,63 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Infravision Equipment Usage</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infravision Equipment Management</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h2>Infravision</h2>
-<h3>Equipment Usage & Fuel Management</h3>
+    <div class="header">
 
-<form id="equipmentForm">
+        <img src="logo.png" class="logo">
 
-<label>Employee ID</label>
-<input type="text" id="employeeId" required>
+        <h1>INFRAVISION</h1>
 
-<label>User Name</label>
-<input type="text" id="userName" readonly>
+        <p>Equipment Usage & Fuel Management</p>
 
-<label>Mobile Number</label>
-<input type="text" id="mobile" readonly>
+    </div>
 
-<label>Location</label>
-<input type="text" id="location" readonly>
+    <div class="card">
 
-<label>Equipment Number</label>
-<input type="text" id="equipmentNumber" readonly>
+        <h2><i class="fa-solid fa-user"></i> Employee Details</h2>
 
-<label>Date of Use</label>
-<input type="date" id="dateOfUse" required>
+        <form id="equipmentForm">
 
-<label>In Time</label>
-<input type="time" id="inTime" required>
+            <div class="input-box">
 
-<label>Out Time</label>
-<input type="time" id="outTime" required>
+                <label>Employee ID</label>
 
-<label>In Meter Reading</label>
-<input type="number" id="inMeter" required>
+                <input
+                type="text"
+                id="employeeId"
+                placeholder="Enter Employee ID"
+                required>
 
-<label>Out Meter Reading</label>
-<input type="number" id="outMeter" required>
+            </div>
 
-<label>Fuel (Litres)</label>
-<input type="number" id="fuel">
+            <div class="input-box">
 
-<label>Lubes</label>
-<input type="text" id="lubes">
+                <label>Employee Name</label>
 
-<label>Remarks</label>
-<textarea id="remarks"></textarea>
+                <input
+                type="text"
+                id="userName"
+                readonly>
 
-<button type="submit">Submit</button>
+            </div>
 
-</form>
+            <div class="input-box">
+
+                <label>Mobile Number</label>
+
+                <input
+                type="text"
+                id="mobile"
+                readonly>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Location</label>
+
+                <input
+                type="text"
+                id="location"
+                readonly>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Equipment Number</label>
+
+                <input
+                type="text"
+                id="equipmentNumber"
+                readonly>
+
+            </div>
+
+            <hr>
+
+            <h2><i class="fa-solid fa-truck"></i> Equipment Usage</h2>
+
+            <div class="input-box">
+
+                <label>Date of Use</label>
+
+                <input
+                type="date"
+                id="dateOfUse">
+
+            </div>
+
+            <div class="row">
+
+                <div class="half">
+
+                    <label>In Time</label>
+
+                    <input
+                    type="time"
+                    id="inTime">
+
+                </div>
+
+                <div class="half">
+
+                    <label>Out Time</label>
+
+                    <input
+                    type="time"
+                    id="outTime">
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="half">
+
+                    <label>In Meter</label>
+
+                    <input
+                    type="number"
+                    id="inMeter">
+
+                </div>
+
+                <div class="half">
+
+                    <label>Out Meter</label>
+
+                    <input
+                    type="number"
+                    id="outMeter">
+
+                </div>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Fuel Quantity (L)</label>
+
+                <input
+                type="number"
+                id="fuel">
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Lubes</label>
+
+                <input
+                type="text"
+                id="lubes">
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Remarks</label>
+
+                <textarea
+                id="remarks"
+                rows="4"></textarea>
+
+            </div>
+
+            <button type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+                SUBMIT ENTRY
+            </button>
+
+        </form>
+
+    </div>
 
 </div>
 
